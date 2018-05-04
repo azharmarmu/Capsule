@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_toolbar"
+    style="@style/HeaderBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:elevation="@dimen/_4dp"
+    android:padding="@dimen/_8dp">
+
+    <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/_8dp"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/_8dp"
+        android:src="@drawable/ic_person" />
+
+
+    <TextView
+        android:id="@+id/tvSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/ivProfile"
+        android:layout_toStartOf="@+id/ivCart"
+        android:background="@color/colorPrimaryLight"
+        android:drawablePadding="@dimen/_8dp"
+        android:drawableStart="@drawable/ic_search"
+        android:padding="@dimen/_8dp"
+        android:text="@string/search_for_items"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_16sp" />
+
+    <ImageView
+        android:id="@+id/ivCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_8dp"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/_8dp"
+        android:src="@drawable/ic_shopping_cart" />
+
+</RelativeLayout>

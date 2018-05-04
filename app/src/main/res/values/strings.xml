@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Capsule</string>
+
+    <string name="default_notification_channel_id">default</string>
+
+
+    <string name="description">5G Speed \n Online Pharmacy</string>
+    <string name="get_started">Get started</string>
+    <string name="next">Continue</string>
+
+    <!-- Login Activity -->
+    <string name="login_activity_description">
+        HP will send an SMS message to verify
+        your phone number Enter your country
+        code and phone number
+    </string>
+
+    <string name="name">User Name</string>
+    <string name="email">E-mail</string>
+    <string name="phone_number">Phone number</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="otp_description">We\'ve sent an OTP to your mobile number</string>
+    <string name="dash">______</string>
+    <string name="submit">Submit</string>
+    <string name="delivery_description">Free 2-4 Hour Delivery</string>
+    <string name="discount_description">Flat 15-20% off</string>
+    <string name="returns_description">Easy 15 days Returns</string>
+    <string name="logo">LOGO</string>
+    <string name="terms_msg">By Tapping on continue, you agree to the</string>
+    <string name="terms_link"><![CDATA[Terms & Conditions]]></string>
+    <string name="search_for_items">Search for items</string>
+
+</resources>
