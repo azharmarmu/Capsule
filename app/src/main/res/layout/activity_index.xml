@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWhite"
+    android:background="@color/colorBG"
+    android:padding="@dimen/_16dp"
     tools:context=".activity.IndexActivity">
 
     <TextView
@@ -38,58 +39,61 @@
         app:layout_constraintTop_toBottomOf="@+id/tvLogo" />
 
 
-    <LinearLayout
-        android:padding="@dimen/_32dp"
-        android:background="@drawable/box_primary"
+    <android.support.v7.widget.CardView
         android:id="@+id/features"
         android:layout_width="@dimen/_0dp"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/btStarted"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDescription">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/delivery_description"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-            android:textColor="@color/colorBlack"
-            android:textSize="@dimen/_16sp" />
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_32dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_8dp"
-            android:text="@string/discount_description"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-            android:textColor="@color/colorBlack"
-            android:textSize="@dimen/_16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delivery_description"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_16sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_8dp"
-            android:text="@string/returns_description"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-            android:textColor="@color/colorBlack"
-            android:textSize="@dimen/_16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8dp"
+                android:text="@string/discount_description"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_16sp" />
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8dp"
+                android:text="@string/returns_description"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_16sp" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
 
     <Button
-        android:layout_margin="@dimen/_16dp"
         android:id="@+id/btStarted"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/_15dp"
-        android:background="@drawable/box_primary_corner"
         android:onClick="getStarted"
         android:text="@string/get_started"
         android:textColor="@color/colorBlack"
         android:textSize="@dimen/_16sp"
+        android:theme="@style/AppTheme.Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />

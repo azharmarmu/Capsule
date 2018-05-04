@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBG"
     android:padding="@dimen/_16dp"
     tools:context=".activity.OTPActivity">
 
@@ -60,10 +61,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_8dp"
-            android:textColor="@color/colorBlack"
-            android:background="@drawable/box_primary_corner"
             android:onClick="checkOTP"
-            android:text="@string/submit" />
+            android:text="@string/submit"
+            android:textColor="@color/colorBlack"
+            android:theme="@style/AppTheme.Button" />
 
         <ImageView
             android:id="@+id/iv_otp_resend"
