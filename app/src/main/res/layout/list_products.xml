@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_150dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/_16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_16dp">
+
+        <ImageView
+            android:id="@+id/ivProductImage"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_75dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="IME-9 Tablet"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_12sp" />
+
+        <TextView
+            android:id="@+id/tvProductOffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6dp"
+            android:text="MRP 300.0 18.0% OFF"
+            android:textColor="@color/colorBlue"
+            android:textSize="@dimen/_8sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tvProductRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4dp"
+            android:text="246.0"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_12sp" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

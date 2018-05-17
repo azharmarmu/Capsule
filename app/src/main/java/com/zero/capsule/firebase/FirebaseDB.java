@@ -19,8 +19,12 @@ public class FirebaseDB {
 
     /* RealTime */
     private final DatabaseReference ENVIRONMENT = dbRT.getReference(Constants.ENV);
+    public final DatabaseReference carouselListRT = ENVIRONMENT.child(Constants.carouselList);
 
     /* Fire Store */
+    public final CollectionReference userFS = dbFS.collection(Constants.usersList);
+    public final CollectionReference popularProductsListFS = dbFS.collection(Constants.popularProductsList);
+    public final CollectionReference deliveryBoyFS = dbFS.collection(Constants.deliveryBoyList);
 
     public FirebaseDB() {
         FirebaseFirestoreSettings settings = new FirebaseFirestoreSettings.Builder()

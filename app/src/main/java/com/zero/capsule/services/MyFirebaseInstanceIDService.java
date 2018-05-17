@@ -4,6 +4,7 @@ import android.util.Log;
 
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.FirebaseInstanceIdService;
+import com.zero.capsule.firebase.FirebaseDB;
 import com.zero.capsule.utils.Constants;
 import com.zero.capsule.utils.SharePref;
 
@@ -26,7 +27,7 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
         // Instance ID token to your app server.
         saveTokenInLocal(refreshedToken);
         if (Constants.AUTH.getCurrentUser() != null) {
-            saveTokenToDB();
+            saveTokenToDB(refreshedToken);
         }
     }
 
@@ -34,8 +35,8 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
         SharePref.setToken(getApplicationContext(), refreshedToken);
     }
 
-    private void saveTokenToDB() {
-        // TODO: 04/05/18
+    private void saveTokenToDB(String refreshedToken) {
+        new FirebaseDB().userFS.document(Constants.AUTH.getUid()).update(Constants.deviceToken, refreshedToken);
     }
 
 }

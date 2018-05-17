@@ -31,8 +31,7 @@ public class LoginActivity extends AppCompatActivity implements Serializable, Pe
 
     public void nextClick(View view) {
         Dexter.withActivity(this)
-                .withPermission(
-                        Manifest.permission.RECEIVE_SMS)
+                .withPermission(Manifest.permission.RECEIVE_SMS)
                 .withListener(this)
                 .check();
     }

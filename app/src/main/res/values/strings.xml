@@ -22,12 +22,43 @@
     <string name="otp_description">We\'ve sent an OTP to your mobile number</string>
     <string name="dash">______</string>
     <string name="submit">Submit</string>
-    <string name="delivery_description">Free 2-4 Hour Delivery</string>
-    <string name="discount_description">Flat 15-20% off</string>
+    <string name="delivery_description">Free 2–4 Hour Delivery</string>
+    <string name="discount_description">Flat 15–20% off</string>
     <string name="returns_description">Easy 15 days Returns</string>
     <string name="logo">LOGO</string>
     <string name="terms_msg">By Tapping on continue, you agree to the</string>
     <string name="terms_link"><![CDATA[Terms & Conditions]]></string>
     <string name="search_for_items">Search for items</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="notification">Notification</string>
+    <string name="cart">Cart</string>
+    <string name="vellore">Vellore</string>
+    <string name="order_with_prescription">Order with prescription</string>
+    <string name="up_to_20_off">Up to 20% off</string>
+    <string name="upload">UPLOAD</string>
+    <string name="important_message">Important Message</string>
+    <string name="popular_products">Popular Products</string>
+    <string name="view_all">VIEW ALL</string>
+    <string name="search">Search</string>
+    <string name="choose_an_option_to_upload">Choose an option to upload</string>
+    <string name="camera">CAMERA</string>
+    <string name="my_prescriptions">MY PRESCRIPTIONS</string>
+    <string name="gallery">GALLERY</string>
+
+    <string name="valid_prescription_guide">Valid Prescription Guide</string>
+    <string name="guide_1">- Don\'t crop out any part of image</string>
+    <string name="guide_2">- Avoid blurred image</string>
+    <string name="guide_3">- Include details of doctor and patient + clinic visit date</string>
+    <string name="guide_4">- Medicines will be dispensed as per prescription</string>
+    <string name="government_regulation_require_a_valid_prescription">Government regulation require a valid prescription</string>
+    <string name="attached_prescription">Attached Prescription</string>
+    <string name="continue_key">CONTINUE</string>
+    <string name="cancel">CANCEL</string>
+    <string name="ok">OK</string>
 
 </resources>

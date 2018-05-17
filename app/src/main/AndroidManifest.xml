@@ -6,6 +6,9 @@
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name=".app.MyApp"
@@ -15,17 +18,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/NoActionBar">
+
+        <!-- activities -->
         <activity android:name=".activity.IndexActivity" />
         <activity android:name=".activity.LoginActivity" />
         <activity android:name=".activity.OTPActivity" />
-        <activity android:name=".activity.MainActivity">
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.UploadPrescriptionActivity" />
 
+        <!-- receivers -->
         <receiver
             android:name=".receiver.SMSReceiver"
             android:permission="android.permission.BROADCAST_SMS">
@@ -34,6 +43,7 @@
             </intent-filter>
         </receiver>
 
+        <!-- services -->
         <service
             android:name=".services.MyFirebaseInstanceIDService"
             android:permission="true">
@@ -49,6 +59,7 @@
             </intent-filter>
         </service>
 
+        <!-- others -->
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_channel_id"
             android:value="@string/default_notification_channel_id" />

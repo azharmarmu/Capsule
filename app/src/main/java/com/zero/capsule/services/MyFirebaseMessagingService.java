@@ -66,7 +66,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
     @SuppressWarnings("StatementWithEmptyBody")
     private void handleNotification(String message) {
-        if (!CommonUtil.isAppIsInBackground(getApplicationContext())) {
+        if (CommonUtil.isAppIsInBackground(getApplicationContext())) {
             // app is in foreground, broadcast the push message
             Intent pushNotification = new Intent(Constants.PUSH_NOTIFICATION);
             pushNotification.putExtra("message", message);
@@ -95,7 +95,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             Log.e(TAG, "imageUrl: " + imageUrl);
 
 
-            if (!CommonUtil.isAppIsInBackground(getApplicationContext())) {
+            if (CommonUtil.isAppIsInBackground(getApplicationContext())) {
                 // app is in foreground, broadcast the push message
                 Intent pushNotification = new Intent(Constants.PUSH_NOTIFICATION);
                 pushNotification.putExtra("message", message);

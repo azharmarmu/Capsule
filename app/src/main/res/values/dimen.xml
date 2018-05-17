@@ -68,6 +68,8 @@
     <dimen name="_64dp">64dp</dimen>
 
     <!-- All Dimens in Sps-->
+    <dimen name="_8sp">8sp</dimen>
+    <dimen name="_10sp">10sp</dimen>
     <dimen name="_12sp">12sp</dimen>
     <dimen name="_13sp">13sp</dimen>
     <dimen name="_14sp">14sp</dimen>

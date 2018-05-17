@@ -156,7 +156,7 @@ public class FirebasePhoneAuthentication {
                             map.put(Constants.phoneNumber, phoneNumber);
                             map.put(Constants.deviceToken, SharePref.getToken(activity));
 
-                            // TODO: 04/05/18
+                            new FirebaseDB().userFS.document(Constants.AUTH.getUid()).set(map);
 
                             Intent mainActivity = new Intent(activity, MainActivity.class);
                             mainActivity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
