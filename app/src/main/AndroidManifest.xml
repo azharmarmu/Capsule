@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.zero.capsule">
+    package="com.natives.zero.capsule">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
@@ -33,7 +33,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.UploadPrescriptionActivity" />
-
+        <activity android:name=".activity.ExistingPrescriptionActivity" />
+        <activity android:name=".activity.OrderInformationActivity" />
         <!-- receivers -->
         <receiver
             android:name=".receiver.SMSReceiver"
@@ -63,6 +64,7 @@
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_channel_id"
             android:value="@string/default_notification_channel_id" />
+
     </application>
 
 </manifest>
