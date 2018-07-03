@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorBG"
     android:padding="@dimen/_16dp"
-    tools:context=".activity.IndexActivity">
+    tools:context=".meds.activity.IndexActivity">
 
     <TextView
         android:id="@+id/tvLogo"

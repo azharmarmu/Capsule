@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_16dp">
+
+    <!-- Carousel -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/carouselContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100dp"
+        android:layout_marginTop="@dimen/_16sp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_4dp">
+            <!--Image slider-->
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/imgSlider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.daimajia.slider.library.Indicators.PagerIndicator
+                android:id="@+id/customIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imgSlider"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:gravity="center"
+                app:selected_color="@color/colorPrimary"
+                app:unselected_color="@color/colorPrimaryDark" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <!-- Important Message -->
+    <TextView
+        android:id="@+id/importantMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/carouselContainer"
+        android:layout_marginTop="@dimen/_16dp"
+        android:background="@drawable/box_primary"
+        android:gravity="center"
+        android:padding="@dimen/_16dp"
+        android:text="@string/important_message"
+        android:visibility="gone" />
+
+    <!-- Buy Medicine with Prescription -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/buyMedicine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/importantMsg"
+        android:layout_marginTop="@dimen/_8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8dp">
+
+            <ImageView
+                android:id="@+id/ivPrescription"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_48dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_prescription" />
+
+            <TextView
+                android:id="@+id/tvPrescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4dp"
+                android:layout_marginTop="@dimen/_4dp"
+                android:layout_toEndOf="@+id/ivPrescription"
+                android:text="@string/search_buy_medicines"
+                android:textSize="@dimen/_16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPrescriptionDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvPrescription"
+                android:layout_marginStart="@dimen/_4dp"
+                android:layout_marginTop="@dimen/_4dp"
+                android:layout_toEndOf="@+id/ivPrescription"
+                android:text="@string/up_to_20_off"
+                android:textSize="@dimen/_12sp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <!-- Buy Medicine with Prescription -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/otcMedicine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buyMedicine"
+        android:layout_marginTop="@dimen/_8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8dp">
+
+            <ImageView
+                android:id="@+id/ivOTC"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_48dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_prescription" />
+
+            <TextView
+                android:id="@+id/tvOTC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4dp"
+                android:layout_marginTop="@dimen/_4dp"
+                android:layout_toEndOf="@+id/ivOTC"
+                android:text="@string/otc_wellness"
+                android:textSize="@dimen/_16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvOTCDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvOTC"
+                android:layout_marginStart="@dimen/_4dp"
+                android:layout_marginTop="@dimen/_4dp"
+                android:layout_toEndOf="@+id/ivOTC"
+                android:text="@string/up_to_20_off"
+                android:textSize="@dimen/_12sp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ChooseAddressActivity">
+
+    <Button
+        android:id="@+id/tvAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/_16dp"
+        android:onClick="addAddress"
+        android:text="@string/add_address"
+        android:textColor="@color/colorBlack"
+        android:theme="@style/AppTheme.Button" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvAddress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/continueLayout"
+        android:layout_below="@+id/tvAddress"
+        android:padding="@dimen/_16dp" />
+
+    <Button
+        android:id="@+id/continueLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_16dp"
+        android:onClick="continuePrescription"
+        android:text="@string/continue_key"
+        android:textColor="@color/colorBlack"
+        android:theme="@style/AppTheme.Button" />
+
+</RelativeLayout>

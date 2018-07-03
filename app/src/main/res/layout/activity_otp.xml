@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorBG"
     android:padding="@dimen/_16dp"
-    tools:context=".activity.OTPActivity">
+    tools:context=".meds.activity.OTPActivity">
 
     <LinearLayout
         android:layout_width="@dimen/_0dp"

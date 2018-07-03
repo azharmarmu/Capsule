@@ -1,4 +1,4 @@
-package com.natives.zero.capsule
+package com.zero.capsule.meds
 
 import org.junit.Test
 

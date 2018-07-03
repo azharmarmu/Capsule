@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.natives.zero.capsule">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zero.capsule.meds">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
@@ -23,9 +24,19 @@
         <activity android:name=".activity.IndexActivity" />
         <activity android:name=".activity.LoginActivity" />
         <activity android:name=".activity.OTPActivity" />
-        <activity
-            android:name=".activity.MainActivity"
-            android:theme="@style/NoActionBar">
+        <activity android:name=".activity.RegistrationActivity" />
+        <activity android:name=".activity.TCActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:scheme="id.web.freelancer.example.TCActivity"
+                    tools:ignore="AppLinkUrlError" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -35,6 +46,9 @@
         <activity android:name=".activity.UploadPrescriptionActivity" />
         <activity android:name=".activity.ExistingPrescriptionActivity" />
         <activity android:name=".activity.OrderInformationActivity" />
+        <activity android:name=".activity.ViewAllProducts" />
+        <activity android:name=".activity.SearchMedicineActivity" />
+
         <!-- receivers -->
         <receiver
             android:name=".receiver.SMSReceiver"
@@ -65,6 +79,10 @@
             android:name="com.google.firebase.messaging.default_notification_channel_id"
             android:value="@string/default_notification_channel_id" />
 
+        <activity android:name=".activity.AddAddressActivity" />
+        <activity android:name=".activity.ChooseAddressActivity" />
+        <activity android:name=".activity.ConfirmOrderActivity" />
+        <activity android:name=".activity.BuyMedicinesActivity" />
     </application>
 
 </manifest>
